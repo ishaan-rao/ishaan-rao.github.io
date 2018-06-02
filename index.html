@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles for this website -->
     <link href="css/style.css" rel="stylesheet">
 
   </head>
@@ -49,17 +49,20 @@
 
     <section id="main">
       <div class="layer">
-    <div id="title-container">
+        <div id="title-container">
           <h1 class="title">Ishaan Rao</h1>
+        </div>
+        <div id="resume-button">
+          <a class="text-light" href="resume.html">Resume</a>
         </div>
         <footer class="footer" id="footer">
           <div class="row">
             <div class="col-sm">
-              <a href="https://www.facebook.com/ishaan.rao.98" target="_blank" class="fa fa-facebook"></a>
-              <a href="mailto:ishaanr@seas.upenn.edu" target="_blank" class="fa fa-envelope"></a>
-              <a href="https://www.linkedin.com/in/ishaanr21" target="_blank" class="fa fa-linkedin"></a>
-              <a href="https://github.com/ishaan-rao" target="_blank" class="fa fa-github"></a>
-              <a href="#" target="_blank" class="fa fa-file"></a>
+              <a href="https://www.facebook.com/ishaan.rao.98" target="_blank" class="fa fa-facebook footerIcon"></a>
+              <a href="mailto:ishaanr@seas.upenn.edu" target="_blank" class="fa fa-envelope footerIcon"></a>
+              <a href="https://www.linkedin.com/in/ishaanr21" target="_blank" class="fa fa-linkedin footerIcon"></a>
+              <a href="https://github.com/ishaan-rao" target="_blank" class="fa fa-github footerIcon"></a>
+              <!-- <a href="#" target="_blank" class="fa fa-file"></a> -->
             </div>
           </div>
       </footer>
@@ -68,24 +71,54 @@
   </section>
   <section id="portfolio">
     <div class="layer">
-      <h1 class="title">Portfolio</h1>
-
-
+      <h1 class="title sectionTitle">Portfolio</h1>
     </div>
  </section>
  <section  id="contact">
    <div class="layer">
-     <h1 class="title">Contact</h1>
-<!--     <div class="row">
-       <div class="col-sm-5">
-         <h5>ishaanr@seas.upenn.edu</h5>
-         <h5>919-867-1207</h5>
-         <h5>4022 Spruce St. Philadelphia, PA 19104</h5>
-       </div>
-       <div class="col-sm-7">
-         Form
-       </div>
-    </div> -->
+    <h1 class="title sectionTitle">Contact</h1>
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-5">
+          <form>
+            <div class="formComponent">
+              <p>Name: *</p>
+              <input type="text" id="nameInput" placeholder="Enter your name" required="required" class="form-control">
+            </div>
+            <br>
+            <div class="formComponent">
+              <p>Email Address: *</p>
+              <input type="email" id="emailInput" placeholder="Enter your email" required="required" class="form-control">
+            </div>
+            <br>
+            <div class="formComponent">
+              <p>Message: *</p>
+              <textarea rows="5" id="messageInput" placeholder="Enter your message" required="required" class="form-control"></textarea>
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-indigo" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-5">
+          <div id="contactDetails">
+            <div class="row">
+              <div class="col-md-6">
+                <p><span class="fa fa-phone contactIcon"></span>+1 (919) 867-1207</p>
+                <p><span class="fa fa-envelope contactIcon"></span>ishaanr@seas.upenn.edu</p>
+              </div>
+              <div class="col-md-6">
+                <p><span class="fa fa-linkedin contactIcon"></span>ishaanr21</p>
+                <p><span class="fa fa-github contactIcon"></span>ishaan-rao</p>
+              </div>
+            </div>
+          </div>
+          <iframe width="100%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=University%20of%20Pennsylvania+()&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Embed Google Map</a></iframe>
+        </div>
+        <div class="col-md-1">
+        </div>
+    </div>
    </div>
   </section>
 
@@ -96,7 +129,7 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom JavaScript for this theme -->
+    <!-- Custom JavaScript for this website -->
     <script src="js/script.js"></script>
 
   </body>

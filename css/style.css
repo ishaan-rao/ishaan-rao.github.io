@@ -4,40 +4,8 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-}
-
-section {
-  padding-bottom: 10px;
-}
-
-#main {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("https://images.alphacoders.com/550/550279.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-#portfolio {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("https://www.translegal.com/wp-content/uploads/Upenn.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-#contact {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("https://newevolutiondesigns.com/images/freebies/philadelphia-downtown.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  font-family: "Abel", sans-serif;
+  color: white;
 }
 
 .layer {
@@ -46,34 +14,20 @@ section {
   background-color: rgba(100, 124, 155, 0.7);
 }
 
-#title-container {
-  width: 100%;
-  padding-top: 35vh;
-}
-
 .title {
   text-align: center;
-  margin: 0;
-  padding: 0;
   color: white;
   text-transform: uppercase;
   font-family: "Abel", sans-serif;
   font-size: 60px;
 }
 
-/* .hr {
-  margin-bottom: -19px;
-} */
-
-#portfolio {
-  width: 100%;
-  height: 100vh;
+.sectionTitle {
+  padding-top: 75px;
+  margin-bottom: 50px;
 }
 
-#contact {
-  width: 100%;
-  height: 100vh;
-}
+/***** NAVBAR *****/
 
 nav {
   height: 75px;
@@ -81,6 +35,39 @@ nav {
 
 .nav-link {
   font-family: "Abel", sans-serif;
+}
+
+/***** MAIN SECTION *****/
+
+#main {
+  width: 100vw;
+  /* height: 100vh; */
+  background-image: url("https://images.alphacoders.com/550/550279.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#title-container {
+  width: 100%;
+  padding-top: 35vh;
+}
+
+#resume-button {
+  font-family: "Abel", sans-serif;
+  font-size: 22.5px;
+  text-align: center;
+  color: white;
+  width: 100px;
+  margin: auto;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+#resume-button a {
+  text-decoration: none;
 }
 
 .footer {
@@ -93,7 +80,7 @@ nav {
     text-align: center;
 }
 
-.fa {
+.footerIcon {
   font-size: 20px;
   width: 50px;
   height: 50px;
@@ -106,9 +93,50 @@ nav {
   border: 1px solid white;
 }
 
-.fa:hover {
+.footerIcon:hover {
     opacity: 0.7;
     color: lightgrey;
     border: 1px solid white;
     text-decoration: none;
+}
+
+/***** PORTFOLIO SECTION *****/
+
+#portfolio {
+  width: 100vw;
+  /* height: 100vh; */
+  background-image: url("https://www.translegal.com/wp-content/uploads/Upenn.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/***** CONTACT SECTION *****/
+
+#contact {
+  width: 100vw;
+  /* height: 100vh; */
+  background-image: url("https://newevolutiondesigns.com/images/freebies/philadelphia-downtown.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contactIcon {
+  width: 15px;
+  margin-right: 10px;
+}
+
+/***** RESUME SECTION *****/
+
+#resume {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/images1/Philadelphia-ultra-HD-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }

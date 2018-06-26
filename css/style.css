@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*
+To-Do:
+2. Portfolio Page
+3. Responsive Design
+4. Logo
+5. Cleanup Formatting
+6. Contact Form on Server
+*/
+
+
 
 body {
   padding: 0;
@@ -8,9 +20,13 @@ body {
   color: white;
 }
 
+section {
+  min-height: 100vh;
+}
+
 .layer {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   background-color: rgba(100, 124, 155, 0.7);
 }
 
@@ -22,7 +38,7 @@ body {
   font-size: 60px;
 }
 
-.sectionTitle {
+.section-title {
   padding-top: 75px;
   margin-bottom: 50px;
 }
@@ -41,8 +57,7 @@ nav {
 
 #main {
   width: 100vw;
-  /* height: 100vh; */
-  background-image: url("https://images.alphacoders.com/550/550279.jpg");
+  background-image: url("../images/main.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -80,7 +95,7 @@ nav {
     text-align: center;
 }
 
-.footerIcon {
+.footer-icon {
   font-size: 20px;
   width: 50px;
   height: 50px;
@@ -93,7 +108,7 @@ nav {
   border: 1px solid white;
 }
 
-.footerIcon:hover {
+.footer-icon:hover {
     opacity: 0.7;
     color: lightgrey;
     border: 1px solid white;
@@ -105,11 +120,18 @@ nav {
 #portfolio {
   width: 100vw;
   /* height: 100vh; */
-  background-image: url("https://www.translegal.com/wp-content/uploads/Upenn.jpg");
+  background-image: url("../images/portfolio.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.portfolio-item {
+  width: 100%;
+  background-color: grey;
+  height: 125px;
+  text-align: center;
 }
 
 /***** CONTACT SECTION *****/
@@ -117,14 +139,14 @@ nav {
 #contact {
   width: 100vw;
   /* height: 100vh; */
-  background-image: url("https://newevolutiondesigns.com/images/freebies/philadelphia-downtown.jpg");
+  background-image: url("../images/contact.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.contactIcon {
+.contact-icon {
   width: 15px;
   margin-right: 10px;
 }
@@ -133,10 +155,194 @@ nav {
 
 #resume {
   width: 100vw;
-  height: 100vh;
-  background-image: url("https://www.pixelstalk.net/wp-content/uploads/images1/Philadelphia-ultra-HD-1.jpg");
+  /* height: 100vh; */
+
+}
+
+.resume-layer {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(100, 124, 155, 0.7);
+  padding-top: 35%;
+}
+
+#left {
+  width: 50vw;
+  height: auto;
+  min-height: 100vh;
+  float: left;
+  background-image: url("../images/resume.jpg");;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left top;
   background-size: cover;
-  background-attachment: fixed;
+}
+
+#right {
+  width: 50vw;
+  height: 100vh;
+  float: left;
+  background-color: rgba(220,220,220, 0.3);
+  color: black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#details {
+  text-align: center;
+  font-size: 18px;
+}
+
+#details p {
+  margin: 5px;
+}
+
+#resume-name {
+  font-size: 35px;
+}
+
+#dots {
+  font-size: 30px;
+}
+
+#icons {
+  margin-bottom: 35px;
+}
+
+.resume-icon {
+  width: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.resume-icon:hover {
+    opacity: 0.7;
+    color: lightgrey;
+    text-decoration: none;
+}
+
+.resume-section {
+  margin-top: 30px;
+}
+
+.resume-section-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(100, 124, 155);
+}
+
+.resume-link {
+  color: black;
+}
+
+.resume-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.education-school {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0;
+}
+
+.education-degree {
+  font-style: italic;
+  margin: 0;
+}
+
+.education-major {
+  margin: 0;
+}
+
+.education-gpa {
+
+}
+
+.education-coursework {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.coursework-list {
+
+}
+
+.education-date {
+  color: rgb(100, 124, 155);
+  font-weight: bold;
+}
+
+.experience-company {
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.experience-position {
+  margin: 0;
+  font-style: italic;
+}
+
+.experience-description {
+  margin: 0;
+}
+
+.experience-desc-list {
+
+}
+
+.experience-date {
+  color: rgb(100, 124, 155);
+  font-weight: bold;
+}
+
+.activities-name {
+  font-weight: bold;
+}
+
+.activities-description {
+  margin: 0;
+}
+
+.activities-desc-list {
+
+}
+
+.activities-date {
+  color: rgb(100, 124, 155);
+  font-weight: bold;
+}
+
+.awards-name {
+
+}
+
+.awards-description {
+
+}
+
+.awards-date {
+  color: rgb(100, 124, 155);
+  font-weight: bold;
+}
+
+.resume-button {
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  width: 125px;
+  margin: auto;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.resume-button a {
+  text-decoration: none;
 }

@@ -1,17 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-/*
-To-Do:
-2. Portfolio Page
-3. Responsive Design
-4. Logo
-5. Cleanup Formatting
-6. Contact Form on Server
-*/
-
-
-
 body {
   padding: 0;
   margin: 0;
@@ -127,11 +116,78 @@ nav {
   background-attachment: fixed;
 }
 
+.portfolio-item-container {
+  perspective: 1000px;
+}
+
+.portfolio-item-container:hover .portfolio-item, .portfolio-item-container.hover .portfolio-item {
+	transform: rotateY(180deg);
+}
+
+.portfolio-item-container, .front, .back {
+  width: 100%;
+	height: 125px;
+}
+
 .portfolio-item {
   width: 100%;
-  background-color: grey;
   height: 125px;
   text-align: center;
+  transition: 0.8s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front {
+  background-color: rgba(100,100,100,0.7);
+	transform: rotateY(0deg);
+}
+
+.back {
+  background-color: rgba(100,100,100,0.7);
+	transform: rotateY(180deg);
+}
+
+.portfolio-internship {
+
+}
+
+.portfolio-activity {
+
+}
+
+.portfolio-project {
+
+}
+
+.portfolio-item-name {
+  font-size: 20px;
+  margin: 0;
+}
+
+.portfolio-description {
+  font-size: 12px;
+  display: none;
+}
+
+.portfolio-url {
+  color: white;
+  margin: 0;
+}
+
+.portfolio-url:hover {
+  text-decoration: none;
+  color: lightgrey;
 }
 
 /***** CONTACT SECTION *****/
@@ -249,6 +305,11 @@ nav {
   margin: 0;
 }
 
+.education-college {
+  margin: 10px 0 0 0;
+  font-weight: bold;
+}
+
 .education-degree {
   font-style: italic;
   margin: 0;
@@ -259,7 +320,8 @@ nav {
 }
 
 .education-gpa {
-
+  margin: 0;
+  margin-top: 10px;
 }
 
 .education-coursework {
@@ -345,4 +407,15 @@ nav {
 
 .resume-button a {
   text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  #left {
+    width: 100vw;
+  }
+
+  #right {
+    width: 100vw;
+    height: auto;
+  }
 }

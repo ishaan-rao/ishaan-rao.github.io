@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'MarioKart';
+  src: url('mario_kart_f2.ttf');
+}
+
+body {
+	font-family: 'MarioKart';
+}
+
 h1 {
 	text-align: center;
 }
@@ -7,18 +16,17 @@ p {
 }
 
 #mario {
-	width: 49.5%;
-	height: 300px;
+	width: 49%;
+	height: 800px;
 	background-color: red;
 	display: inline-block;
 }
 
 #luigi {
-	width: 49.5%;
-	height: 300px;
+	width: 49%;
+	height: 800px;
 	background-color: green;	
 	display: inline-block;
-
 }
 
 #red {
@@ -27,4 +35,11 @@ p {
 
 #green {
 	color: green;
+}
+
+img {
+	display: inline;
+	height: 300px;
+	margin-left: 35%;
+	margin-top: 100px;
 }

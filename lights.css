@@ -16,17 +16,19 @@ p {
 }
 
 #mario {
-	width: 49%;
+	width: 47%;
 	height: 800px;
 	background-color: red;
 	display: inline-block;
+	margin: 0;
 }
 
 #luigi {
-	width: 49%;
+	width: 47%;
 	height: 800px;
 	background-color: green;	
 	display: inline-block;
+	margin: 0;
 }
 
 #red {
